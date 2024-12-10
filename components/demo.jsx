@@ -163,18 +163,6 @@ const Demo = () => {
           </div>
         </div>
       </motion.div>
-      <Link href="/levels">
-      <motion.button 
-          className="mt-8 px-8 py-4 bg-gradient-to-r from-indigo-500 to-indigo-300 text-white font-semibold rounded-full shadow-lg transition duration-300 ease-in-out transform hover:from-violet-700 hover:to-indigo-700"
-          variants={buttonVariants}
-          initial="hidden"
-          animate={controls}
-          whileHover="hover"
-          whileTap="tap"
-        >
-          Begin Your Learning Journey
-        </motion.button>
-        </Link>
     </div>
 
   );
