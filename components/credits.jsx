@@ -7,15 +7,15 @@ const teamMembers = [
   {
     name: 'Obay Rashad',
     linkedin: 'https://www.linkedin.com/in/obay-dev',
-    role: 'Lead Developer',
-    description: 'Obay created the user interface, brought this website to life, and led the team in producing this excellent work.',
+    role: 'Software Engineer',
+    description: '',
     image: '/team/obay.jpeg',
   },
   {
     name: 'Ziad Elkafoury',
     linkedin: 'https://www.linkedin.com/in/ziad-elkafoury',
-    role: 'Data Scientist & Backend Developer',
-    description: 'Ziad handled all data-related tasks, including data gathering, processing, and visualization. He also created the backend for the "Imagine a Planet" tool.',
+    role: 'Researcher | Data Scientest',
+    description: '',
     image: '/team/ziad.jpeg',
   },
 ];
@@ -61,7 +61,7 @@ const Section = ({ title, people }) => (
       {title}
     </motion.h2>
     <motion.div
-      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12"
+      className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-4xl mx-auto"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, delay: 0.2 }}
@@ -72,7 +72,6 @@ const Section = ({ title, people }) => (
     </motion.div>
   </div>
 );
-
 const CreditsSection = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-black to-gray-900">
@@ -85,7 +84,7 @@ const CreditsSection = () => {
         >
           <div className="absolute inset-0 bg-stars" />
           <div className="relative z-10">
-            <Section title="Who is behind this?" people={teamMembers} />
+            <Section title="The Team" people={teamMembers} />
           </div>
         </motion.div>
       </div>
